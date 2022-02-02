@@ -30,7 +30,7 @@ namespace BookListRazor.Pages.BookList
             _db.Book.Remove(book);
             await _db.SaveChangesAsync();
 
-            return RedirectToAction("Index");
+            return RedirectToPage("Index");
         }
     }
 }
